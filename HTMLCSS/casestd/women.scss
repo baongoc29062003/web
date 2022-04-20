@@ -1,0 +1,195 @@
+
+
+$primary_color:rgb(3, 53, 22);
+$secondaryy_color:rgb(100, 18, 3);
+
+@mixin img {
+    padding-top: 20px;
+        width: 95%;
+        display: block;
+        margin: auto;
+        height: 500px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: inherit;
+    background-color: $primary_color;
+}
+
+
+.banner{
+    height: 550px;
+    background: linear-gradient(transparent, rgb(209, 115, 131)) , url(./img/womenbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  nav{
+    width: 100%;
+    height: 70px;
+    ul {
+        list-style: none;
+        display: flex;
+        
+    }
+    li{
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 10px;
+        padding-top: 20px;
+        button{
+            background-color: $primary_color;
+            color: gold;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: gold;
+    }
+    a:hover{
+        color: white;
+    }
+}
+.text{
+    color: whitesmoke;
+    font-size: 80px;
+    text-align: center;
+    font-family: inherit;
+    margin-top: 150px;
+    font-weight: lighter;
+}
+nav:hover{
+    background-color:$secondaryy_color ;      
+    }
+}
+
+
+.container{
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    .row{
+        gap: 20px;
+        
+            text-align: center;
+            .card{
+                background-color: rgb(229, 147, 161);
+                border: none;
+                img{
+                    width: 95%;
+                    margin-left: 6px;
+                    margin-top: 6px;
+                }
+            }
+            .card:hover {
+                background-color: white;
+                transform:  translate(10px);
+            }
+            
+        .col-5{
+            img{
+                width: 136%;
+            }
+        }    
+
+    }
+  h1{
+      color: white;
+      padding-left: 10px;
+      border-left: 7px solid $secondaryy_color ;
+      background: linear-gradient(to right,transparent, black);
+      width: 1250px;
+      margin-bottom: 20px;
+  }
+}
+
+
+.container-1{
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    .row{
+        gap: 10px;
+        
+            text-align: center;
+            .card{
+                margin-left: 80px;
+                background-color: rgb(229, 147, 161);
+                border: none;
+                img{
+                    width: 95%;
+                    margin-left: 6px;
+                    margin-top: 6px;
+                }
+            }
+            .card:hover {
+                background-color: white;
+                transform:  translate(10px);
+            }
+
+        .col-5{
+            img{
+                width: 117%;
+            }
+        }    
+
+    }
+  h1{
+      color: white;
+  }
+}
+
+
+
+.container-2{
+    height: 500px;
+    img{
+        @include img();
+    }
+}
+.container-3{
+    height: 500px;
+    img{
+        @include img();
+    }
+}
+
+
+footer{
+    margin-top: 50px;
+    height: 500px;
+    background-color: rgb(229, 147, 161);
+    color: black;
+    ul {
+        padding-top: 80px;
+        li{
+        list-style: none;
+        padding-top: 5px;
+         }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h5{
+        color: $primary_color;
+    }
+    a:hover{
+        color: gold;
+    }
+    img{
+        height: 100px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+      

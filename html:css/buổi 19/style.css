@@ -1,0 +1,24 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding-left: 300px;
+}
+input.form-control {
+    width: 300px;
+    border-radius: 0;
+}
+.register-link{
+    margin-right: 40%;
+    color: white;
+    text-decoration: none;
+}
+.register-link:hover
+{
+    text-decoration: underline;
+    color: white;
+}

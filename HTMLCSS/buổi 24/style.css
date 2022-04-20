@@ -1,0 +1,19 @@
+.main-post img {
+  height: 30%;
+  border-radius: 5px;
+}
+
+.main-post p {
+  color: #0000ff;
+}
+
+.related-post img {
+  height: 70px;
+  border-radius: 5px;
+}
+
+.related-post p {
+  color: #b0b32e;
+  display: inline;
+}
+/*# sourceMappingURL=style.css.map */

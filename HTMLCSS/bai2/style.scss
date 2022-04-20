@@ -1,0 +1,44 @@
+// #900C3F (đỏ đậm)
+// #95FEF3 (xanh da trời)
+// #F1FF89 (vàng nhạt)
+// #070A5C (xanh dương đậm)
+// #065805 (xanh lá cây)
+$primary_extra_small:#900C3F ;
+$secondaryy_extra_small:#95FEF3;
+$font_size_extra_small: 14px;
+
+$primary_small:#070A5C ;
+$secondaryy_small:#F1FF89;
+$font_size_small: 18px;
+
+$primary_medium:#065805 ;
+$secondaryy_medium:white;
+$font_size_medium: 24px;
+body{
+    background-color: black;
+}
+
+@mixin layout($primary, $secondaryy, $font)
+{
+    #container{
+        background-color: $secondaryy;
+        border: 2px solid $primary;
+        h1, p {
+            color: $primary;
+            font-size: $font;
+        }
+    }
+}
+
+
+@media screen and ( max-width:576px) {
+    @include layout($primary_extra_small, $secondaryy_extra_small, $font_size_extra_small)
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    @include layout($primary_small, $secondaryy_small, $font_size_small)
+}
+@media screen and (min-width: 769px){
+    @include layout($primary_medium, $secondaryy_medium, $font_size_medium )
+}
+            

@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+  #container {
+    background-color: #95FEF3;
+    border: 2px solid #900C3F;
+  }
+  #container h1, #container p {
+    color: #900C3F;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  #container {
+    background-color: #F1FF89;
+    border: 2px solid #070A5C;
+  }
+  #container h1, #container p {
+    color: #070A5C;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #container {
+    background-color: white;
+    border: 2px solid #065805;
+  }
+  #container h1, #container p {
+    color: #065805;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
