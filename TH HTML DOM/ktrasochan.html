@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhập số : </h2>
+    <input type="text" id="NhapSo"></input>
+    <button onclick="test ()" type="button">Kiểm tra</button>
+</body>
+<script>
+    function test(){
+         let num = document.getElementById('NhapSo').value
+         if (num % 2 == 0)
+         {
+             alert(num + ' là số chẵn')
+         }
+         else
+         alert(num + ' là số lẻ')
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nhập năm cần kiểmn tra</h3>
+    <input type="text" name="" id="year">
+    <button onclick="year()">Kiểm Tra</button>
+</body>
+<script>
+    function year(){
+        let Year = document.getElementById('year').value
+        // if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0 && year % 100 != 0 )  ) 
+        if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) 
+        {
+        alert(Year + " là năm nhuận")
+        }
+        else
+        {
+           alert(Year + " là năm không  nhuận")
+        }
+    }
+</script>
+</html>

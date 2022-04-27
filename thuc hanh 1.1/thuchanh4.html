@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Thực hành </h1>
+    <button onclick="NhapXuat ()">Nhập và xuất dữ liệu đơn giản với JavaScript</button>
+    <br>
+    <button onclick="Area ()" id="area">Tính diện tích hình chữ nhật </button>
+    <br>
+    <button onclick="Date ()" id="date">Hiển thị ngày tháng năm sinh </button>
+
+    
+</body>
+<script>
+    function NhapXuat (){
+        let value = prompt ("Hãy nhập tên của bạn")
+        document.write(value)
+    }
+    function Area (){
+        let width = prompt("Nhập chiều rộng hình chữ nhật")
+        let height = prompt("Nhập chiều dài hình chữ nhật")
+        // document.write("area =" + width * height )
+        document.getElementById("area").innerText = "area = " +  width * height 
+    }
+     function Date (){
+         let Ngay = prompt ("Nhập ngày ...")
+         let Thang = prompt ("Nhập tháng ...")
+         let Nam = prompt ("Nhập năm ...")
+         document.getElementById("date").innerText = Ngay + "-" + Thang + "-" + Nam
+     }
+
+</script>
+
+</html>
